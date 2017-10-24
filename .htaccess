@@ -1,0 +1,16 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond $1#%{REQUEST_URI} ([^#]*)#(.*?)\1$
+RewriteRule ^(.*)$ %2index.php
+</IfModule>
+
+<ifmodule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript
+</ifmodule>
+
+<FilesMatch "\.(ico|js|css)$">
+Header set Cache-Control "max-age=172800, public"
+</FilesMatch>

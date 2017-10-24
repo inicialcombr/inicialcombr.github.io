@@ -1,0 +1,31 @@
+#Gerado por Fabiano Couto - www.fabianocouto.com.br
+#Analise e Desenvolvimento de Sistemas
+
+#Definicoees de robots de busca de conteudo
+
+User-Agent: *
+Allow: /
+
+User-Agent: GoogleBot
+Allow: /
+
+User-Agent: Slurp
+Allow: /
+
+User-Agent: msnbot
+Disallow: /
+
+#Definicoes de robots de busca de imagens
+
+User-Agent: Googlebot-Image
+Allow: /
+
+User-Agent: yahoo-mmcrawler
+Allow: /
+
+User-Agent: psbot
+Disallow: /
+
+#Definicoes permicoes de diretorios
+
+Disallow: /assets
