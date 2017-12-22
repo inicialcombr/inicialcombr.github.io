@@ -1,6 +1,6 @@
 
 var InCoderAPI = {
-    URL: '../api/php/'
+    URL: 'http://www.inicial.com.br/incoder/api/'
 }
 
 var InCoder = {
