@@ -29,6 +29,16 @@
     .page p {text-align: center; display: block;}
     .page .fa-cog {width: 14px; height: 14px;}
     </style>
+    <link rel="manifest" href="/manifest.json" />
+    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+    <script>
+      var OneSignal = window.OneSignal || [];
+      OneSignal.push(function() {
+        OneSignal.init({
+          appId: "eb4b46ba-0d38-4f62-b94d-e8c88a36d9ab",
+        });
+      });
+    </script>
   </head>
   <body>
     <?php require('analyticstracking.php'); ?>
