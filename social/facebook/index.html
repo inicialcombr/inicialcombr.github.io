@@ -32,7 +32,7 @@ img {position: absolute; top: 0; left: 0; right: 0; bottom: 0; margin: auto;}
 <script type="text/javascript" src="jscript.js"></script>
 <script type="text/javascript">
 function openURL(){
-  window.open('https://www.facebook.com', '_blank', 'location=no,toolbar=no');
+  var app = window.open('https://www.facebook.com', '_blank', 'location=no,toolbar=no,fullscreen=yes');
 }
 if (location.search=='?standalone') {
   openURL();
