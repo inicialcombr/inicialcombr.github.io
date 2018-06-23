@@ -32,7 +32,7 @@
         "sizes": "192x192",
         "density": "4.0"
       }],
-  "start_url": "./index.html",
+  "start_url": "./index.html?standalone",
   "scope": "./",
   "display": "standalone",
   "background_color": "#4267b2",

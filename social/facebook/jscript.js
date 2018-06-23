@@ -1,6 +1,8 @@
 if ('serviceWorker' in navigator && 'PushManager' in window && (window.location.protocol === 'https:' || window.location.hostname === 'localhost')) {
 
-	navigator.serviceWorker.register(window.location.href+'sw.js', { scope: window.location.href }).then(function(registration) {
+	var baseURL = location.href.replace(location.search, '');
+
+	navigator.serviceWorker.register(baseURL+'sw.js', { scope: baseURL }).then(function(registration) {
 		console.log('SW Registered');
 	});
 

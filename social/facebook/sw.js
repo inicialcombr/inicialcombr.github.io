@@ -1,6 +1,6 @@
 self.addEventListener('install', event => {
   event.waitUntil(
-    caches.open('facebook').then(cache => {
+    caches.open('facebook-v1').then(cache => {
       return cache.addAll([
         './icons/android-icon-144x144.png',
         './icons/android-icon-192x192.png',
@@ -39,7 +39,7 @@ self.addEventListener('activate',  event => {
 
 self.addEventListener('fetch', event => {
   event.respondWith (
-    caches.match(event.request, {ignoreSearch:true, ignoreMethod:true, ignoreVary:true, cacheName:'facebook'}).then(response => {
+    caches.match(event.request, {ignoreSearch:true, ignoreMethod:true, ignoreVary:true, cacheName:'facebook-v1'}).then(response => {
       return response || fetch(event.request);
     })
   )
