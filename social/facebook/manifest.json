@@ -32,7 +32,7 @@
         "sizes": "192x192",
         "density": "4.0"
       }],
-  "start_url": "https://www.facebook.com",
+  "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
   "background_color": "#4267b2",
